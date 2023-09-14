@@ -1,0 +1,14 @@
+[
+  {
+    "payload": [
+      {
+        "text": {
+          "text": "Jack Jackson added you as a reviewer for the pull request",
+          "type": "mrkdwn"
+        },
+        "type": "section"
+      }
+    ],
+    "send_to": "kyle-slack-id"
+  }
+]

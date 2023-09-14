@@ -1,0 +1,100 @@
+{
+  "subscriptionId": "05cb0944-678c-4457-a63d-832f6e191296",
+  "notificationId": 1,
+  "id": "9682d260-4977-406c-b8cd-6df034a86a39",
+  "eventType": "git.pullrequest.created",
+  "publisherId": "tfs",
+  "message": {
+    "text": "Jack Jackson created pull request 3363 (Update README) in my-repo\r\nhttps://dev.azure.com/MyOrg/MyProject/_git/my-repo/",
+    "html": "Jack Jackson created <a href=\"https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3363\">pull request 3363</a> (Update README) in <a href=\"https://dev.azure.com/MyOrg/MyProject/_git/my-repo/\">my-repo</a>",
+    "markdown": "Jack Jackson created [pull request 3363](https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3363) (Update README) in [my-repo](https://dev.azure.com/MyOrg/MyProject/_git/my-repo/)"
+  },
+  "detailedMessage": {
+    "text": "Jack Jackson created pull request 3363 (Update README) in my-repo\r\nhttps://dev.azure.com/MyOrg/MyProject/_git/my-repo/\r\nThis is a test PR, nevermind it \r\n",
+    "html": "Jack Jackson created <a href=\"https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3363\">pull request 3363</a> (Update README) in <a href=\"https://dev.azure.com/MyOrg/MyProject/_git/my-repo/\">my-repo</a><p>This is a test PR, nevermind it </p>",
+    "markdown": "Jack Jackson created [pull request 3363](https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3363) (Update README) in [my-repo](https://dev.azure.com/MyOrg/MyProject/_git/my-repo/)\r\nThis is a test PR, nevermind it \r\n"
+  },
+  "resource": {
+    "repository": {
+      "id": "d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b",
+      "name": "my-repo",
+      "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b",
+      "project": {
+        "id": "443cdfd1-b6e8-4d1a-b5a8-b8bac0472047",
+        "name": "MyProject",
+        "description": "--",
+        "url": "https://dev.azure.com/MyOrg/_apis/projects/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047",
+        "state": "wellFormed",
+        "revision": 109,
+        "visibility": "private",
+        "lastUpdateTime": "2022-12-19T10:05:34.013Z"
+      },
+      "size": 2635611,
+      "remoteUrl": "https://MyOrg@dev.azure.com/MyOrg/MyProject/_git/my-repo",
+      "sshUrl": "git@ssh.dev.azure.com:v3/MyOrg/MyProject/my-repo",
+      "webUrl": "https://dev.azure.com/MyOrg/MyProject/_git/my-repo",
+      "isDisabled": false,
+      "isInMaintenance": false
+    },
+    "pullRequestId": 3363,
+    "codeReviewId": 3363,
+    "status": "active",
+    "createdBy": {
+      "displayName": "Jack Jackson",
+      "url": "https://spsprodweu3.vssps.visualstudio.com/Ac2af9b9b-e009-4e6e-984a-da7bcca124c2/_apis/Identities/62a8530b-6f1c-49f3-9cd5-6f68fb1dc0b3",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/MyOrg/_apis/GraphProfile/MemberAvatars/aad.f6a547d933dc4ad1ad632e3f3967994b"
+        }
+      },
+      "id": "62a8530b-6f1c-49f3-9cd5-6f68fb1dc0b3",
+      "uniqueName": "jack.jackson@myorg.com",
+      "imageUrl": "https://dev.azure.com/MyOrg/_api/_common/identityImage?id=62a8530b-6f1c-49f3-9cd5-6f68fb1dc0b3",
+      "descriptor": "aad.f6a547d933dc4ad1ad632e3f3967994b"
+    },
+    "creationDate": "2023-09-11T14:41:39.9449315Z",
+    "title": "Update README",
+    "description": "This is a test PR, nevermind it ",
+    "sourceRefName": "refs/heads/feature/update_readme",
+    "targetRefName": "refs/heads/main",
+    "mergeStatus": "conflicts",
+    "isDraft": false,
+    "mergeId": "5909642b-6242-4b4e-8962-f50bdc58198a",
+    "lastMergeSourceCommit": {
+      "commitId": "085797ccd2ab478aa6c8eb123911e3c0",
+      "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/commits/085797ccd2ab478aa6c8eb123911e3c0"
+    },
+    "lastMergeTargetCommit": {
+      "commitId": "11c5070f677249cd83c21284636859d7",
+      "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/commits/11c5070f677249cd83c21284636859d7"
+    },
+    "reviewers": [],
+    "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3363",
+    "_links": {
+      "web": {
+        "href": "https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3363"
+      },
+      "statuses": {
+        "href": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3363/statuses"
+      }
+    },
+    "supportsIterations": true,
+    "artifactId": "vstfs:///Git/PullRequestId/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047%2fd515d6da-f5e4-40b3-8c8c-9b26e0c70b7b%2f3363"
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "4f5cbb5e-10dc-424c-bbe7-ac6af23a10ba",
+      "baseUrl": "https://dev.azure.com/MyOrg/"
+    },
+    "account": {
+      "id": "c2af9b9b-e009-4e6e-984a-da7bcca124c2",
+      "baseUrl": "https://dev.azure.com/MyOrg/"
+    },
+    "project": {
+      "id": "443cdfd1-b6e8-4d1a-b5a8-b8bac0472047",
+      "baseUrl": "https://dev.azure.com/MyOrg/"
+    }
+  },
+  "createdDate": "2023-09-11T14:41:46.6592541Z"
+}

@@ -1,0 +1,33 @@
+name: Test
+
+on:
+  pull_request:
+    types: [opened, synchronize, edited]
+
+jobs:
+  run_tests:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🔁
+        uses: actions/checkout@v3
+
+      - name: Set up Python 🐍
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.10
+
+      - name: Install Poetry and pre-commit 💈
+        run: pip install poetry pre-commit
+
+      - name: Install dependencies 🛠
+        run: poetry install
+
+      - name: Run pre-commit 🤔
+        run: pre-commit run --all-files
+
+      - name: Run tests 🌈
+        run: poetry run pytest
+#       later
+#      - name: Build docker image 🚧
+#        run: docker build .

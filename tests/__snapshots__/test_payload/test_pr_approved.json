@@ -1,0 +1,14 @@
+[
+  {
+    "payload": [
+      {
+        "text": {
+          "text": "✅ Jack Jackson approved <https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3373|pull request 3373> (Update README) in <https://dev.azure.com/MyOrg/MyProject/_git/my-repo/|my-repo>",
+          "type": "mrkdwn"
+        },
+        "type": "section"
+      }
+    ],
+    "send_to": "jane-slack-id"
+  }
+]

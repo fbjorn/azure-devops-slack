@@ -1,0 +1,117 @@
+{
+  "subscriptionId": "29391b97-14ef-4d9d-9583-31b35138946f",
+  "notificationId": 3648,
+  "id": "4d828562-1bae-4ae8-a3fd-0f71b84fcec2",
+  "eventType": "git.pullrequest.updated",
+  "publisherId": "tfs",
+  "message": {
+    "text": "Jack Jackson is waiting for the author in pull request 3373 (Update README) in my-repo\r\nhttps://dev.azure.com/MyOrg/MyProject/_git/my-repo/",
+    "html": "Jack Jackson is waiting for the author in <a href=\"https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3373\">pull request 3373</a> (Update README) in <a href=\"https://dev.azure.com/MyOrg/MyProject/_git/my-repo/\">my-repo</a>",
+    "markdown": "Jack Jackson is waiting for the author in [pull request 3373](https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3373) (Update README) in [my-repo](https://dev.azure.com/MyOrg/MyProject/_git/my-repo/)"
+  },
+  "detailedMessage": {
+    "text": "Jack Jackson is waiting for the author in pull request 3373 (Update README) in my-repo\r\nhttps://dev.azure.com/MyOrg/MyProject/_git/my-repo/\r\nPlease ignore this PR\r\n",
+    "html": "Jack Jackson is waiting for the author in <a href=\"https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3373\">pull request 3373</a> (Update README) in <a href=\"https://dev.azure.com/MyOrg/MyProject/_git/my-repo/\">my-repo</a><p>Please ignore this PR</p>",
+    "markdown": "Jack Jackson is waiting for the author in [pull request 3373](https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3373) (Update README) in [my-repo](https://dev.azure.com/MyOrg/MyProject/_git/my-repo/)\r\nPlease ignore this PR\r\n"
+  },
+  "resource": {
+    "repository": {
+      "id": "d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b",
+      "name": "my-repo",
+      "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b",
+      "project": {
+        "id": "443cdfd1-b6e8-4d1a-b5a8-b8bac0472047",
+        "name": "MyProject",
+        "description": "--",
+        "url": "https://dev.azure.com/MyOrg/_apis/projects/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047",
+        "state": "wellFormed",
+        "revision": 109,
+        "visibility": "private",
+        "lastUpdateTime": "2022-12-19T10:05:34.013Z"
+      },
+      "size": 2635611,
+      "remoteUrl": "https://MyOrg@dev.azure.com/MyOrg/MyProject/_git/my-repo",
+      "sshUrl": "git@ssh.dev.azure.com:v3/MyOrg/MyProject/my-repo",
+      "webUrl": "https://dev.azure.com/MyOrg/MyProject/_git/my-repo",
+      "isDisabled": false,
+      "isInMaintenance": false
+    },
+    "pullRequestId": 3373,
+    "codeReviewId": 3373,
+    "status": "active",
+    "createdBy": {
+      "displayName": "Jane Doe",
+      "url": "https://spsprodweu3.vssps.visualstudio.com/Ac2af9b9b-e009-4e6e-984a-da7bcca124c2/_apis/Identities/344ff7b7-1bf6-4a55-b8d8-fccce706da1b",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/MyOrg/_apis/GraphProfile/MemberAvatars/aad.9e2180976a4a43fa8f25ee021a5c34d1"
+        }
+      },
+      "id": "344ff7b7-1bf6-4a55-b8d8-fccce706da1b",
+      "uniqueName": "jane.doe@myorg.com",
+      "imageUrl": "https://dev.azure.com/MyOrg/_apis/GraphProfile/MemberAvatars/aad.9e2180976a4a43fa8f25ee021a5c34d1",
+      "descriptor": "aad.9e2180976a4a43fa8f25ee021a5c34d1"
+    },
+    "creationDate": "2023-09-12T14:28:39.5418081Z",
+    "title": "Update README",
+    "description": "Please ignore this PR",
+    "sourceRefName": "refs/heads/feature/update_readme",
+    "targetRefName": "refs/heads/main",
+    "mergeStatus": "conflicts",
+    "isDraft": false,
+    "mergeId": "c0d92a0d-cb30-406e-80f8-b149c48afa94",
+    "lastMergeSourceCommit": {
+      "commitId": "a87bd115da37540dcec9673498a54b2a7a2b3a9b",
+      "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/commits/a87bd115da37540dcec9673498a54b2a7a2b3a9b"
+    },
+    "lastMergeTargetCommit": {
+      "commitId": "53f3cc504c9636a5bd901ecac817090591fc7639",
+      "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/commits/53f3cc504c9636a5bd901ecac817090591fc7639"
+    },
+    "reviewers": [
+      {
+        "reviewerUrl": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3373/reviewers/62a8530b-6f1c-49f3-9cd5-6f68fb1dc0b3",
+        "vote": -5,
+        "hasDeclined": false,
+        "isFlagged": false,
+        "displayName": "Jack Jackson",
+        "url": "https://spsprodweu3.vssps.visualstudio.com/Ac2af9b9b-e009-4e6e-984a-da7bcca124c2/_apis/Identities/62a8530b-6f1c-49f3-9cd5-6f68fb1dc0b3",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/MyOrg/_apis/GraphProfile/MemberAvatars/aad.f6a547d933dc4ad1ad632e3f3967994b"
+          }
+        },
+        "id": "62a8530b-6f1c-49f3-9cd5-6f68fb1dc0b3",
+        "uniqueName": "jack.jackson@myorg.com",
+        "imageUrl": "https://dev.azure.com/MyOrg/_api/_common/identityImage?id=62a8530b-6f1c-49f3-9cd5-6f68fb1dc0b3"
+      }
+    ],
+    "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3373",
+    "_links": {
+      "web": {
+        "href": "https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3373"
+      },
+      "statuses": {
+        "href": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3373/statuses"
+      }
+    },
+    "supportsIterations": true,
+    "artifactId": "vstfs:///Git/PullRequestId/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047%2fd515d6da-f5e4-40b3-8c8c-9b26e0c70b7b%2f3373"
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "4f5cbb5e-10dc-424c-bbe7-ac6af23a10ba",
+      "baseUrl": "https://dev.azure.com/MyOrg/"
+    },
+    "account": {
+      "id": "c2af9b9b-e009-4e6e-984a-da7bcca124c2",
+      "baseUrl": "https://dev.azure.com/MyOrg/"
+    },
+    "project": {
+      "id": "443cdfd1-b6e8-4d1a-b5a8-b8bac0472047",
+      "baseUrl": "https://dev.azure.com/MyOrg/"
+    }
+  },
+  "createdDate": "2023-09-12T14:32:57.2794395Z"
+}
