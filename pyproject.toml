@@ -20,6 +20,7 @@ pytest = "^7.2.1"
 syrupy = "^4.5.0"
 flake8-pyproject = "^1.2.3"
 invoke = "^2.2.0"
+gunicorn = "20.1.0"
 
 [build-system]
 requires = ["poetry-core"]
