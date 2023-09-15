@@ -6,7 +6,7 @@ on:
       - "docker"
 
 jobs:
-  docker:
+  BuildAndUpload:
     runs-on: ubuntu-latest
     steps:
       - name: Set up QEMU
@@ -18,8 +18,16 @@ jobs:
         with:
           username: fbjorn
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Build and push
-        uses: docker/build-push-action@v5
-        with:
-          push: true
-          tags: fbjorn/devops-slack-pr-webhook:latest,fbjorn/devops-slack-pr-webhook:123
+      - name: Get the version
+        run: |
+          VERSION=$(sed -n '3p' < pyproject.toml | sed 's/\"//g' | sed 's/version = //')
+          echo "PROJECT_VERSION=${VERSION}" >> $GITHUB_ENV
+      - name: Check the version
+        run: |
+          echo $PROJECT_VERSION
+
+#      - name: Build and push
+#        uses: docker/build-push-action@v5
+#        with:
+#          push: true
+#          tags: fbjorn/devops-slack-pr-webhook:latest,fbjorn/devops-slack-pr-webhook:123
