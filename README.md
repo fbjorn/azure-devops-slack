@@ -1,4 +1,4 @@
-# Azure DevOps code review 🤝 Slack
+# Slack 🤝 Azure DevOps code reviews
 
 Do you
 
