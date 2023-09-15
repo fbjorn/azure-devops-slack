@@ -10,11 +10,17 @@ Well, then you might like an idea to receive notifications from pull requests in
 Slack.
 
 It requires a bit of setup, but then all (configured) team members will be able to get
-informed in direct messages
+informed in direct messages:
 
-1. When a pull request is created, and they are assigned as reviewers
-2. When their pull request is approved
-3. When someone leaves a comment on their PRs
+1. **When a pull request is created, and they are assigned as reviewers**
+<img width="663" alt="image" src="https://github.com/fbjorn/azure-devops-slack/assets/9670990/70736266-76aa-40f9-a48e-47a7ef7afeaa">
+
+2. **When their pull request is approved**
+<img width="653" alt="image" src="https://github.com/fbjorn/azure-devops-slack/assets/9670990/4003405c-6ac7-455f-bda4-41e408affd73">
+
+3. **When someone leaves a comment on their PRs**
+<img width="654" alt="image" src="https://github.com/fbjorn/azure-devops-slack/assets/9670990/f4d7f288-bc5e-4460-b866-14e11820d71f">
+
 4. When someone replies to their comment _[IN PROGRESS]_
 
 # Setup
