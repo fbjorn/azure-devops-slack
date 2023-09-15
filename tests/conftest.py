@@ -22,6 +22,11 @@ def known_users(monkeypatch):
             emails=["kyle.walker@myorg.com"],
             slack_id="kyle-slack-id",
         ),
+        UserConfig(
+            name_filter="Jamal",
+            emails=["fabrikamfiber4@hotmail.com"],
+            slack_id="jamal-slack-id",
+        ),
     ]
     yield
 

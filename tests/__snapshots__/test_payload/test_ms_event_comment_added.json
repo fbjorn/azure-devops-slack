@@ -1,0 +1,30 @@
+[
+  {
+    "payload": [
+      {
+        "text": {
+          "text": "*Jamal Hartnett 2 left a* <None/pullrequest/1?discussionId=5|comment>*:*",
+          "type": "mrkdwn"
+        },
+        "type": "section"
+      },
+      {
+        "text": {
+          "text": "This is my comment.",
+          "type": "mrkdwn"
+        },
+        "type": "section"
+      },
+      {
+        "elements": [
+          {
+            "text": "*Fabrikam* / my first pull request",
+            "type": "mrkdwn"
+          }
+        ],
+        "type": "context"
+      }
+    ],
+    "send_to": "jamal-slack-id"
+  }
+]

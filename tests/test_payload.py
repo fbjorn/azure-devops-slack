@@ -43,7 +43,11 @@ def test_wait_for_changes(snapshot_json):
     assert payload_list == snapshot_json
 
 
+def test_ms_event_comment_added(snapshot_json):
+    # TODO: Fix None in the URL
+    payload_list = get_slack_payload_list("ms_comment_added")
+    assert payload_list == snapshot_json
+
+
 # TODO:
 # def test_reviewer_assigned(snapshot_json):
-# def test_pr_approved(snapshot_json):
-# def test_waiting_for_changes(snapshot_json):

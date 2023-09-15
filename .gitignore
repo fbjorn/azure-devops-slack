@@ -133,3 +133,4 @@ dmypy.json
 # Project files
 obfuscate.yaml
 users.yaml
+deploy.yaml

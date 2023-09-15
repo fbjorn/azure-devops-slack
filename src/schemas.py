@@ -34,7 +34,7 @@ class Comment(BaseModel):
 
 class Repository(BaseModel):
     name: str
-    url: str = Field(..., alias="webUrl")
+    url: str | None = Field(alias="webUrl")
 
 
 class PullRequest(BaseModel):

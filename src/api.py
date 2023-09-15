@@ -16,7 +16,7 @@ def handle_api_event(request: Request):
         return Response(status=401)
 
     payload = request.get_json(silent=True) or {}
-    if conf.LOG_EVENTS:
+    if conf.DEBUG:
         print(payload)
 
     event = DevOpsEvent(**payload)

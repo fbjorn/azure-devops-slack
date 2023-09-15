@@ -67,8 +67,8 @@ def parse_pr_updated_event(evt: DevOpsEvent) -> List[SlackMessage] | None:
     if approved in evt.message.text or waits in evt.message.text:
         if user := find_user(evt.resource.created_by):
             messages.append(PRStatusChanged(receiver=user.slack_id, evt=evt))
-    else:
-        for reviewer in evt.resource.reviewers:
-            if user := find_user(reviewer):
-                messages.append(PRCreated(receiver=user.slack_id, evt=evt))
+    # else:
+    #     for reviewer in evt.resource.reviewers:
+    #         if user := find_user(reviewer):
+    #             messages.append(PRCreated(receiver=user.slack_id, evt=evt))
     return messages

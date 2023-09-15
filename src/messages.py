@@ -21,8 +21,8 @@ class SlackMessage(BaseModel):
 
 class PRCreated(SlackMessage):
     def get_blocks(self):
-        author = self.evt.resource.created_by.name
-        text = f"{author} added you as a reviewer for the pull request"
+        text = convert_links_to_slack_md(self.evt.message.markdown)
+        text += " and added you as a reviewer"
         return [
             {
                 "type": "section",
