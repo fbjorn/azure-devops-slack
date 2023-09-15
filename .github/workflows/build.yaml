@@ -33,4 +33,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: fbjorn/devops-slack-pr-webhook:latest,fbjorn/devops-slack-pr-webhook:$PROJECT_VERSION
+          tags: fbjorn/devops-slack-pr-webhook:latest,fbjorn/devops-slack-pr-webhook:${{env.PROJECT_VERSION}}
