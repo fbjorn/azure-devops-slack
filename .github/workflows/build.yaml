@@ -11,25 +11,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
+      - name: Get the version
+        run: |
+          VERSION=$(sed -n '3p' < pyproject.toml | sed 's/\"//g' | sed 's/version = //')
+          echo "PROJECT_VERSION=${VERSION}" >> $GITHUB_ENV
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
+
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
           username: fbjorn
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Get the version
-        run: |
-          VERSION=$(sed -n '3p' < pyproject.toml | sed 's/\"//g' | sed 's/version = //')
-          echo "PROJECT_VERSION=${VERSION}" >> $GITHUB_ENV
-      - name: Check the version
-        run: |
-          echo $PROJECT_VERSION
 
-#      - name: Build and push
-#        uses: docker/build-push-action@v5
-#        with:
-#          push: true
-#          tags: fbjorn/devops-slack-pr-webhook:latest,fbjorn/devops-slack-pr-webhook:123
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          push: true
+          tags: fbjorn/devops-slack-pr-webhook:latest,fbjorn/devops-slack-pr-webhook:$PROJECT_VERSION
