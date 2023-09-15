@@ -13,13 +13,13 @@ It requires a bit of setup, but then all (configured) team members will be able 
 informed in direct messages:
 
 1. **When a pull request is created, and they are assigned as reviewers**
-<img width="663" alt="image" src="https://github.com/fbjorn/azure-devops-slack/assets/9670990/70736266-76aa-40f9-a48e-47a7ef7afeaa">
+   <img width="663" alt="image" src="https://github.com/fbjorn/azure-devops-slack/assets/9670990/70736266-76aa-40f9-a48e-47a7ef7afeaa">
 
 2. **When their pull request is approved**
-<img width="653" alt="image" src="https://github.com/fbjorn/azure-devops-slack/assets/9670990/4003405c-6ac7-455f-bda4-41e408affd73">
+   <img width="653" alt="image" src="https://github.com/fbjorn/azure-devops-slack/assets/9670990/4003405c-6ac7-455f-bda4-41e408affd73">
 
 3. **When someone leaves a comment on their PRs**
-<img width="654" alt="image" src="https://github.com/fbjorn/azure-devops-slack/assets/9670990/f4d7f288-bc5e-4460-b866-14e11820d71f">
+   <img width="654" alt="image" src="https://github.com/fbjorn/azure-devops-slack/assets/9670990/f4d7f288-bc5e-4460-b866-14e11820d71f">
 
 4. When someone replies to their comment _[IN PROGRESS]_
 
@@ -102,13 +102,24 @@ DEBUG=1
 
 ### Google Cloud Functions
 
+Run the following command to deploy it from your computer or CI. Requires
+[gcloud](https://cloud.google.com/sdk/docs/install) to be installed.
+
 ```bash
 poetry run invoke deploy-cloud-function --help
 ```
 
 ### Anywhere as a Docker image
 
-_[SOON]_
+Deploy this image to a platform you like and don't forget to set environment variables.
+
+```shell
+fbjorn/devops-slack-pr-webhook:latest
+```
+
+The image is uploaded to
+[DockerHub](https://hub.docker.com/repository/docker/fbjorn/devops-slack-pr-webhook)
+automatically from GitHub Actions.
 
 ## 4. Set up triggers in Azure DevOps
 
