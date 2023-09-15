@@ -1,0 +1,30 @@
+[
+  {
+    "payload": [
+      {
+        "text": {
+          "text": "*Jack Jackson left a* <https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3365?discussionId=26838|comment>*:*",
+          "type": "mrkdwn"
+        },
+        "type": "section"
+      },
+      {
+        "text": {
+          "text": "Look at this:\n[SCREENSHOT] ",
+          "type": "mrkdwn"
+        },
+        "type": "section"
+      },
+      {
+        "elements": [
+          {
+            "text": "*my-repo* / Test PR, please ignore it",
+            "type": "mrkdwn"
+          }
+        ],
+        "type": "context"
+      }
+    ],
+    "send_to": "jane-slack-id"
+  }
+]

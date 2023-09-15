@@ -1,0 +1,14 @@
+[
+  {
+    "payload": [
+      {
+        "text": {
+          "text": "Jack Jackson created <https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3364|pull request 3364> (Update README) in <https://dev.azure.com/MyOrg/MyProject/_git/my-repo/|my-repo> and added you as a reviewer",
+          "type": "mrkdwn"
+        },
+        "type": "section"
+      }
+    ],
+    "send_to": "kyle-slack-id"
+  }
+]

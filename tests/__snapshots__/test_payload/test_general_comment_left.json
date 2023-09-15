@@ -1,0 +1,30 @@
+[
+  {
+    "payload": [
+      {
+        "text": {
+          "text": "*Jack Jackson left a* <https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3373?discussionId=26871|comment>*:*",
+          "type": "mrkdwn"
+        },
+        "type": "section"
+      },
+      {
+        "text": {
+          "text": "Just a comment",
+          "type": "mrkdwn"
+        },
+        "type": "section"
+      },
+      {
+        "elements": [
+          {
+            "text": "*my-repo* / Update README",
+            "type": "mrkdwn"
+          }
+        ],
+        "type": "context"
+      }
+    ],
+    "send_to": "jane-slack-id"
+  }
+]

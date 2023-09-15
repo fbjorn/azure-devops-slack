@@ -1,0 +1,131 @@
+{
+  "subscriptionId": "978efd0b-ba2b-4770-aab5-c57cb5d303f9",
+  "notificationId": 2264,
+  "id": "ffbbb020-bcf9-4328-b642-f6504c0af224",
+  "eventType": "ms.vss-code.git-pullrequest-comment-event",
+  "publisherId": "tfs",
+  "message": {
+    "text": "Jack Jackson has commented on a pull request",
+    "html": "Jack Jackson has <a href=\"https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3373?_a=files&amp;path=%2Fbackend%2FREADME.md&amp;discussionId=26870\">commented</a> on a pull request",
+    "markdown": "Jack Jackson has [commented](https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3373?_a=files&path=%2Fbackend%2FREADME.md&discussionId=26870) on a pull request"
+  },
+  "detailedMessage": {
+    "text": "Jack Jackson has commented on a pull request\r\nHey there\r\n",
+    "html": "Jack Jackson has <a href=\"https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3373?_a=files&amp;path=%2Fbackend%2FREADME.md&amp;discussionId=26870\">commented</a> on a pull request<p>Hey there</p>",
+    "markdown": "Jack Jackson has [commented](https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3373?_a=files&path=%2Fbackend%2FREADME.md&discussionId=26870) on a pull request\r\nHey there\r\n"
+  },
+  "resource": {
+    "comment": {
+      "id": 1,
+      "parentCommentId": 0,
+      "author": {
+        "displayName": "Jack Jackson",
+        "url": "https://spsprodweu3.vssps.visualstudio.com/Ac2af9b9b-e009-4e6e-984a-da7bcca124c2/_apis/Identities/62a8530b-6f1c-49f3-9cd5-6f68fb1dc0b3",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/MyOrg/_apis/GraphProfile/MemberAvatars/aad.f6a547d933dc4ad1ad632e3f3967994b"
+          }
+        },
+        "id": "62a8530b-6f1c-49f3-9cd5-6f68fb1dc0b3",
+        "uniqueName": "jack.jackson@myorg.com",
+        "imageUrl": "https://dev.azure.com/MyOrg/_apis/GraphProfile/MemberAvatars/aad.f6a547d933dc4ad1ad632e3f3967994b",
+        "descriptor": "aad.f6a547d933dc4ad1ad632e3f3967994b"
+      },
+      "content": "Hey there",
+      "publishedDate": "2023-09-12T14:29:37.08Z",
+      "lastUpdatedDate": "2023-09-12T14:29:37.08Z",
+      "lastContentUpdatedDate": "2023-09-12T14:29:37.08Z",
+      "commentType": "text",
+      "usersLiked": [],
+      "_links": {
+        "self": {
+          "href": "https://dev.azure.com/MyOrg/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3373/threads/26870/comments/1"
+        },
+        "repository": {
+          "href": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b"
+        },
+        "threads": {
+          "href": "https://dev.azure.com/MyOrg/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3373/threads/26870"
+        },
+        "pullRequests": {
+          "href": "https://dev.azure.com/MyOrg/_apis/git/pullRequests/3373"
+        }
+      }
+    },
+    "pullRequest": {
+      "repository": {
+        "id": "d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b",
+        "name": "my-repo",
+        "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b",
+        "project": {
+          "id": "443cdfd1-b6e8-4d1a-b5a8-b8bac0472047",
+          "name": "MyProject",
+          "description": "--",
+          "url": "https://dev.azure.com/MyOrg/_apis/projects/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047",
+          "state": "wellFormed",
+          "revision": 109,
+          "visibility": "private",
+          "lastUpdateTime": "2022-12-19T10:05:34.013Z"
+        },
+        "size": 2635611,
+        "remoteUrl": "https://MyOrg@dev.azure.com/MyOrg/MyProject/_git/my-repo",
+        "sshUrl": "git@ssh.dev.azure.com:v3/MyOrg/MyProject/my-repo",
+        "webUrl": "https://dev.azure.com/MyOrg/MyProject/_git/my-repo",
+        "isDisabled": false,
+        "isInMaintenance": false
+      },
+      "pullRequestId": 3373,
+      "codeReviewId": 3373,
+      "status": "active",
+      "createdBy": {
+        "displayName": "Jane Doe",
+        "url": "https://spsprodweu3.vssps.visualstudio.com/Ac2af9b9b-e009-4e6e-984a-da7bcca124c2/_apis/Identities/344ff7b7-1bf6-4a55-b8d8-fccce706da1b",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/MyOrg/_apis/GraphProfile/MemberAvatars/aad.9e2180976a4a43fa8f25ee021a5c34d1"
+          }
+        },
+        "id": "344ff7b7-1bf6-4a55-b8d8-fccce706da1b",
+        "uniqueName": "jane.doe@myorg.com",
+        "imageUrl": "https://dev.azure.com/MyOrg/_apis/GraphProfile/MemberAvatars/aad.9e2180976a4a43fa8f25ee021a5c34d1",
+        "descriptor": "aad.9e2180976a4a43fa8f25ee021a5c34d1"
+      },
+      "creationDate": "2023-09-12T14:28:39.5418081Z",
+      "title": "Update README",
+      "description": "Please ignore this PR",
+      "sourceRefName": "refs/heads/feature/update_readme",
+      "targetRefName": "refs/heads/main",
+      "mergeStatus": "conflicts",
+      "isDraft": false,
+      "mergeId": "c0d92a0d-cb30-406e-80f8-b149c48afa94",
+      "lastMergeSourceCommit": {
+        "commitId": "a87bd115da37540dcec9673498a54b2a7a2b3a9b",
+        "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/commits/a87bd115da37540dcec9673498a54b2a7a2b3a9b"
+      },
+      "lastMergeTargetCommit": {
+        "commitId": "53f3cc504c9636a5bd901ecac817090591fc7639",
+        "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/commits/53f3cc504c9636a5bd901ecac817090591fc7639"
+      },
+      "reviewers": [],
+      "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3373",
+      "supportsIterations": true,
+      "artifactId": "vstfs:///Git/PullRequestId/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047%2fd515d6da-f5e4-40b3-8c8c-9b26e0c70b7b%2f3373"
+    }
+  },
+  "resourceVersion": "2.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "4f5cbb5e-10dc-424c-bbe7-ac6af23a10ba",
+      "baseUrl": "https://dev.azure.com/MyOrg/"
+    },
+    "account": {
+      "id": "c2af9b9b-e009-4e6e-984a-da7bcca124c2",
+      "baseUrl": "https://dev.azure.com/MyOrg/"
+    },
+    "project": {
+      "id": "443cdfd1-b6e8-4d1a-b5a8-b8bac0472047",
+      "baseUrl": "https://dev.azure.com/MyOrg/"
+    }
+  },
+  "createdDate": "2023-09-12T14:29:43.5705936Z"
+}

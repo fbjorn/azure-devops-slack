@@ -1,0 +1,23 @@
+{
+  "display_information": {
+    "name": "DevOps Buddy",
+    "description": "Azure DevOps integration",
+    "background_color": "#3c4c7a"
+  },
+  "features": {
+    "bot_user": {
+      "display_name": "DevOps Buddy",
+      "always_online": false
+    }
+  },
+  "oauth_config": {
+    "scopes": {
+      "bot": ["incoming-webhook", "chat:write"]
+    }
+  },
+  "settings": {
+    "org_deploy_enabled": false,
+    "socket_mode_enabled": false,
+    "token_rotation_enabled": false
+  }
+}

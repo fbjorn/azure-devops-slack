@@ -1,0 +1,147 @@
+{
+  "subscriptionId": "978efd0b-ba2b-4770-aab5-c57cb5d303f9",
+  "notificationId": 2256,
+  "id": "5bf17c2f-fbd4-4a17-a43c-bed6c2bc75b2",
+  "eventType": "ms.vss-code.git-pullrequest-comment-event",
+  "publisherId": "tfs",
+  "message": {
+    "text": "Jack Jackson has commented on a pull request",
+    "html": "Jack Jackson has <a href=\"https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3365?discussionId=26838\">commented</a> on a pull request",
+    "markdown": "Jack Jackson has [commented](https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3365?discussionId=26838) on a pull request"
+  },
+  "detailedMessage": {
+    "text": "Jack Jackson has commented on a pull request\r\nLook at this:\n![image.png](https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3365/attachments/image.png) \r\n",
+    "html": "Jack Jackson has <a href=\"https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3365?discussionId=26838\">commented</a> on a pull request<p>Look at this:\n![image.png](https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3365/attachments/image.png) </p>",
+    "markdown": "Jack Jackson has [commented](https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3365?discussionId=26838) on a pull request\r\nLook at this:\n![image.png](https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3365/attachments/image.png) \r\n"
+  },
+  "resource": {
+    "comment": {
+      "id": 1,
+      "parentCommentId": 0,
+      "author": {
+        "displayName": "Jack Jackson",
+        "url": "https://spsprodweu3.vssps.visualstudio.com/Ac2af9b9b-e009-4e6e-984a-da7bcca124c2/_apis/Identities/62a8530b-6f1c-49f3-9cd5-6f68fb1dc0b3",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/MyOrg/_apis/GraphProfile/MemberAvatars/aad.f6a547d933dc4ad1ad632e3f3967994b"
+          }
+        },
+        "id": "62a8530b-6f1c-49f3-9cd5-6f68fb1dc0b3",
+        "uniqueName": "jack.jackson@myorg.com",
+        "imageUrl": "https://dev.azure.com/MyOrg/_apis/GraphProfile/MemberAvatars/aad.f6a547d933dc4ad1ad632e3f3967994b",
+        "descriptor": "aad.f6a547d933dc4ad1ad632e3f3967994b"
+      },
+      "content": "Look at this:\n![image.png](https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3365/attachments/image.png) ",
+      "publishedDate": "2023-09-11T14:49:10.36Z",
+      "lastUpdatedDate": "2023-09-11T14:49:10.36Z",
+      "lastContentUpdatedDate": "2023-09-11T14:49:10.36Z",
+      "commentType": "text",
+      "usersLiked": [],
+      "_links": {
+        "self": {
+          "href": "https://dev.azure.com/MyOrg/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3365/threads/26838/comments/1"
+        },
+        "repository": {
+          "href": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b"
+        },
+        "threads": {
+          "href": "https://dev.azure.com/MyOrg/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3365/threads/26838"
+        },
+        "pullRequests": {
+          "href": "https://dev.azure.com/MyOrg/_apis/git/pullRequests/3365"
+        }
+      }
+    },
+    "pullRequest": {
+      "repository": {
+        "id": "d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b",
+        "name": "my-repo",
+        "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b",
+        "project": {
+          "id": "443cdfd1-b6e8-4d1a-b5a8-b8bac0472047",
+          "name": "MyProject",
+          "description": "--",
+          "url": "https://dev.azure.com/MyOrg/_apis/projects/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047",
+          "state": "wellFormed",
+          "revision": 109,
+          "visibility": "private",
+          "lastUpdateTime": "2022-12-19T10:05:34.013Z"
+        },
+        "size": 2635611,
+        "remoteUrl": "https://MyOrg@dev.azure.com/MyOrg/MyProject/_git/my-repo",
+        "sshUrl": "git@ssh.dev.azure.com:v3/MyOrg/MyProject/my-repo",
+        "webUrl": "https://dev.azure.com/MyOrg/MyProject/_git/my-repo",
+        "isDisabled": false,
+        "isInMaintenance": false
+      },
+      "pullRequestId": 3365,
+      "codeReviewId": 3365,
+      "status": "active",
+      "createdBy": {
+        "displayName": "Jane Doe",
+        "url": "https://spsprodweu3.vssps.visualstudio.com/Ac2af9b9b-e009-4e6e-984a-da7bcca124c2/_apis/Identities/344ff7b7-1bf6-4a55-b8d8-fccce706da1b",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/MyOrg/_apis/GraphProfile/MemberAvatars/aad.9e2180976a4a43fa8f25ee021a5c34d1"
+          }
+        },
+        "id": "344ff7b7-1bf6-4a55-b8d8-fccce706da1b",
+        "uniqueName": "jane.doe@myorg.com",
+        "imageUrl": "https://dev.azure.com/MyOrg/_apis/GraphProfile/MemberAvatars/aad.9e2180976a4a43fa8f25ee021a5c34d1",
+        "descriptor": "aad.9e2180976a4a43fa8f25ee021a5c34d1"
+      },
+      "creationDate": "2023-09-11T14:46:54.9954675Z",
+      "title": "Test PR, please ignore it",
+      "sourceRefName": "refs/heads/feature/standalone-docs",
+      "targetRefName": "refs/heads/main",
+      "mergeStatus": "conflicts",
+      "isDraft": false,
+      "mergeId": "4b297d71-3e95-4f41-bffa-4ce07db608fe",
+      "lastMergeSourceCommit": {
+        "commitId": "150680bd047a500c3289ac5e25e43a185e5f521e",
+        "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/commits/150680bd047a500c3289ac5e25e43a185e5f521e"
+      },
+      "lastMergeTargetCommit": {
+        "commitId": "11c5070f677249cd83c21284636859d7",
+        "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/commits/11c5070f677249cd83c21284636859d7"
+      },
+      "reviewers": [
+        {
+          "reviewerUrl": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3365/reviewers/2068456e-4d04-4201-a196-66fd86e8085f",
+          "vote": 0,
+          "hasDeclined": false,
+          "isFlagged": false,
+          "displayName": "Kyle Walker",
+          "url": "https://spsprodweu3.vssps.visualstudio.com/Ac2af9b9b-e009-4e6e-984a-da7bcca124c2/_apis/Identities/2068456e-4d04-4201-a196-66fd86e8085f",
+          "_links": {
+            "avatar": {
+              "href": "https://dev.azure.com/MyOrg/_apis/GraphProfile/MemberAvatars/aad.dacfae0684524316802b4367391bfe22"
+            }
+          },
+          "id": "2068456e-4d04-4201-a196-66fd86e8085f",
+          "uniqueName": "kyle.walker@myorg.com",
+          "imageUrl": "https://dev.azure.com/MyOrg/_api/_common/identityImage?id=2068456e-4d04-4201-a196-66fd86e8085f"
+        }
+      ],
+      "url": "https://dev.azure.com/MyOrg/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047/_apis/git/repositories/d515d6da-f5e4-40b3-8c8c-9b26e0c70b7b/pullRequests/3365",
+      "supportsIterations": true,
+      "artifactId": "vstfs:///Git/PullRequestId/443cdfd1-b6e8-4d1a-b5a8-b8bac0472047%2fd515d6da-f5e4-40b3-8c8c-9b26e0c70b7b%2f3365"
+    }
+  },
+  "resourceVersion": "2.0",
+  "resourceContainers": {
+    "collection": {
+      "id": "4f5cbb5e-10dc-424c-bbe7-ac6af23a10ba",
+      "baseUrl": "https://dev.azure.com/MyOrg/"
+    },
+    "account": {
+      "id": "c2af9b9b-e009-4e6e-984a-da7bcca124c2",
+      "baseUrl": "https://dev.azure.com/MyOrg/"
+    },
+    "project": {
+      "id": "443cdfd1-b6e8-4d1a-b5a8-b8bac0472047",
+      "baseUrl": "https://dev.azure.com/MyOrg/"
+    }
+  },
+  "createdDate": "2023-09-11T14:49:16.7749711Z"
+}
