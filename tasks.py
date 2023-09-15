@@ -108,8 +108,7 @@ def record_test_sample(ctx, name):
 @task
 def backend(ctx):
     """
-    Record sample JSON event and save it to tests/samples
-    :param name: Name of the file with a sample to write
+    Run Flask server (used in Docker)
     """
     os.environ["PYTHONUNBUFFERED"] = "1"
     ctx.run('poetry run gunicorn "src.flask_app" -b 0.0.0.0:8000')
