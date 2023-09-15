@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "azure-devops-slack"
-version = "0.0.1"
+version = "0.0.2"
 description = "Slack notifications from Azure DevOps pull requests"
 authors = ["Denis <denis@fbjorn.cc>"]
 license = "BSD-3-Clause"
