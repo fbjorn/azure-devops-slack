@@ -103,3 +103,12 @@ def record_test_sample(ctx, name):
     """
     os.environ["NAME"] = name
     ctx.run("poetry run functions_framework --target save_sample --debug")
+
+
+@task
+def backend(ctx):
+    """
+    Run Flask server (used in Docker)
+    """
+    os.environ["PYTHONUNBUFFERED"] = "1"
+    ctx.run('poetry run gunicorn "src.flask_app" -b 0.0.0.0:8000')

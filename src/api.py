@@ -10,8 +10,9 @@ from src.slack import send_direct_message
 
 def handle_api_event(request: Request):
     api_key = request.headers.get("X-API-KEY")
-    if conf.API_KEY and not secrets.compare_digest(
-        conf.API_KEY.get_secret_value(), api_key
+    if conf.API_KEY and (
+        not api_key
+        or not (secrets.compare_digest(conf.API_KEY.get_secret_value(), api_key))
     ):
         return Response(status=401)
 
