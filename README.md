@@ -1,5 +1,7 @@
 # Slack 🤝 Azure DevOps code reviews
 
+![Docker Image Version (latest semver)](https://img.shields.io/docker/v/fbjorn/devops-slack-pr-webhook?label=DockerHub&logo=docker&color=green&logoColor=white)
+
 Do you
 
 - 🚀 collaboratively work on code in Azure DevOps,
