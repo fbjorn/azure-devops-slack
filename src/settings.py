@@ -13,9 +13,10 @@ class UserConfig(BaseModel):
 
 class Conf(BaseSettings):
     API_KEY: Optional[SecretStr]
+    DEBUG: bool = False
+    DEVOPS_PAT: Optional[SecretStr]
     SLACK_BOT_TOKEN: Optional[SecretStr]
     USERS: list[UserConfig] = []
-    DEBUG: bool = False
 
     class Config:
         env_file = Path(__file__).parent.parent / ".env"

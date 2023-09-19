@@ -47,11 +47,20 @@ class PullRequest(BaseModel):
     id: str = Field(..., alias="pullRequestId")
 
 
+class MergeCommit(BaseModel):
+    url: str
+    commit_id: str = Field(..., alias="commitId")
+
+
 class Resource(BaseModel):
     comment: Comment | None
+    title: str | None
+    repository: Repository | None
     pr: PullRequest | None = Field(None, alias="pullRequest")
     created_by: Person | None = Field(None, alias="createdBy")
     reviewers: list[Person] | None
+    pr_id: int | None = Field(None, alias="pullRequestId")
+    last_commit: MergeCommit | None = Field(None, alias="lastMergeSourceCommit")
 
 
 class Message(BaseModel):
@@ -65,6 +74,10 @@ class DevOpsEvent(BaseModel):
     resource: Resource
     message: Message
     detailed_message: Message = Field(..., alias="detailedMessage")
+
+
+class APICommit(BaseModel):
+    comment: str
 
 
 class EventType:

@@ -1,5 +1,5 @@
 {
-  "subscriptionId": "dea72351-f62b-48f8-be39-b47ced6b434c",
+  "subscriptionId": "978efd0b-ba2b-4770-aab5-c57cb5d303f9",
   "notificationId": 2274,
   "id": "af07be1b-f3ad-44c8-a7f1-c4835f2df06b",
   "eventType": "ms.vss-code.git-pullrequest-comment-event",
@@ -53,7 +53,8 @@
           "url": "https://fabrikam.visualstudio.com/DefaultCollection/_apis/projects/6ce954b1-ce1f-45d1-b94d-e6bf2464ba2c",
           "state": "wellFormed",
           "visibility": "unchanged",
-          "lastUpdateTime": "0001-01-01T00:00:00"
+          "lastUpdateTime": "0001-01-01T00:00:00",
+          "description": "--"
         },
         "defaultBranch": "refs/heads/master",
         "remoteUrl": "https://fabrikam.visualstudio.com/DefaultCollection/_git/Fabrikam"

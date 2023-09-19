@@ -150,7 +150,7 @@ poetry install
 pre-commit install
 
 # get information about useful commands
-poetry run invoke --help
+poetry run invoke --list
 
 # run unit tests
 poetry run pytest

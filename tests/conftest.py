@@ -1,4 +1,7 @@
+from unittest.mock import MagicMock
+
 import pytest
+from pydantic import SecretStr
 from syrupy.extensions.json import JSONSnapshotExtension
 
 from src.settings import UserConfig, conf
@@ -32,5 +35,22 @@ def known_users(monkeypatch):
 
 
 @pytest.fixture
+def pat(monkeypatch):
+    monkeypatch.setattr("src.settings.conf.DEVOPS_PAT", SecretStr("TOKEN"))
+
+
+@pytest.fixture
+def no_pat(monkeypatch):
+    monkeypatch.setattr("src.settings.conf.DEVOPS_PAT", None)
+
+
+@pytest.fixture
 def snapshot_json(snapshot):
     return snapshot.with_defaults(extension_class=JSONSnapshotExtension)
+
+
+@pytest.fixture
+def devops_fetch(monkeypatch):
+    client = MagicMock()
+    monkeypatch.setattr("src.handlers.DEVOPS_CLIENT._fetch_url", client)
+    yield client

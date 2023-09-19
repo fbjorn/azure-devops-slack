@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "azure-devops-slack"
-version = "0.0.2"
+version = "0.0.3"
 description = "Slack notifications from Azure DevOps pull requests"
 authors = ["Denis <denis@fbjorn.cc>"]
 license = "BSD-3-Clause"
@@ -28,3 +28,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.flake8]
 max-line-length = 88
+
+[tool.isort]
+profile = "black"

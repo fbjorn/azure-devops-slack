@@ -1,0 +1,30 @@
+[
+  {
+    "payload": [
+      {
+        "text": {
+          "text": "Jack Jackson pushed new changes to the <https://dev.azure.com/MyOrg/MyProject/_git/my-repo/pullrequest/3421|Pull Request>",
+          "type": "mrkdwn"
+        },
+        "type": "section"
+      },
+      {
+        "text": {
+          "text": "_Improve readme_",
+          "type": "mrkdwn"
+        },
+        "type": "section"
+      },
+      {
+        "elements": [
+          {
+            "text": "*my-repo* / Add pre-commit pipeline",
+            "type": "mrkdwn"
+          }
+        ],
+        "type": "context"
+      }
+    ],
+    "send_to": "jane-slack-id"
+  }
+]

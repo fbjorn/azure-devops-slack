@@ -1,5 +1,5 @@
 from src.handlers import compose_messages_from_event
-from tests.helpers import get_slack_payload_list, read_payload
+from tests.helpers import get_slack_payload_list, read_payload, read_payload_as_json
 
 
 def test_pr_created_no_reviewers():
@@ -40,6 +40,20 @@ def test_pr_approved(snapshot_json):
 
 def test_wait_for_changes(snapshot_json):
     payload_list = get_slack_payload_list("wait_for_changes")
+    assert payload_list == snapshot_json
+
+
+def test_new_changes_pushed(snapshot_json, devops_fetch, pat):
+    devops_fetch.return_value = read_payload_as_json("api_commit")
+    payload_list = get_slack_payload_list("new_changes_pushed")
+
+    assert payload_list == snapshot_json
+
+
+def test_new_changes_pushed_no_pat(snapshot_json, devops_fetch, no_pat):
+    devops_fetch.return_value = read_payload_as_json("api_commit")
+    payload_list = get_slack_payload_list("new_changes_pushed")
+
     assert payload_list == snapshot_json
 
 

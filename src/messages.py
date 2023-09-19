@@ -3,7 +3,7 @@ from abc import abstractmethod
 
 from pydantic import BaseModel
 
-from src.schemas import DevOpsEvent
+from src.schemas import APICommit, DevOpsEvent
 from src.utils import convert_links_to_slack_md
 
 
@@ -87,3 +87,42 @@ class PRStatusChanged(SlackMessage):
                     },
                 },
             ]
+
+
+class NewChangesPushed(SlackMessage):
+    commit: APICommit | None
+
+    def get_blocks(self) -> list:
+        author = self.evt.resource.created_by.name
+        pr_title = self.evt.resource.title
+        repo = self.evt.resource.repository.name
+        pr_id = self.evt.resource.pr_id
+        pr_url = f"{self.evt.resource.repository.url}/pullrequest/{pr_id}"
+        text = f"{author} pushed new changes to the <{pr_url}|Pull Request>"
+
+        content = [
+            {
+                "type": "section",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": text,
+                },
+            }
+        ]
+        if self.commit:
+            content.append(
+                {
+                    "type": "section",
+                    "text": {
+                        "type": "mrkdwn",
+                        "text": f"_{self.commit.comment}_",
+                    },
+                }
+            )
+        content.append(
+            {
+                "type": "context",
+                "elements": [{"type": "mrkdwn", "text": f"*{repo}* / {pr_title}"}],
+            },
+        )
+        return content

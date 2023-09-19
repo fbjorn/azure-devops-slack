@@ -1,11 +1,19 @@
 from functools import wraps
 from typing import List
 
-from src.messages import CommentAdded, PRCreated, PRStatusChanged, SlackMessage
+from src.devops import DevOpsClient
+from src.messages import (
+    CommentAdded,
+    NewChangesPushed,
+    PRCreated,
+    PRStatusChanged,
+    SlackMessage,
+)
 from src.schemas import DevOpsEvent, EventType, Person
 from src.settings import UserConfig, conf
 
 EVENT_HANDLERS = {}
+DEVOPS_CLIENT = DevOpsClient()
 
 
 def find_user(person: Person) -> UserConfig | None:
@@ -64,9 +72,21 @@ def parse_pr_updated_event(evt: DevOpsEvent) -> List[SlackMessage] | None:
     messages = []
     approved = "approved pull request"
     waits = "is waiting for the author"
+    code_updated = "updated the source branch"
     if approved in evt.message.text or waits in evt.message.text:
         if user := find_user(evt.resource.created_by):
             messages.append(PRStatusChanged(receiver=user.slack_id, evt=evt))
+    elif code_updated in evt.message.text:
+        commit = DEVOPS_CLIENT.fetch_commit(evt.resource.last_commit.url)
+        for reviewer in evt.resource.reviewers:
+            if user := find_user(reviewer):
+                messages.append(
+                    NewChangesPushed(
+                        receiver=user.slack_id,
+                        commit=commit,
+                        evt=evt,
+                    )
+                )
     # else:
     #     for reviewer in evt.resource.reviewers:
     #         if user := find_user(reviewer):
