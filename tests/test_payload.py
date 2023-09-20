@@ -57,6 +57,13 @@ def test_new_changes_pushed_no_pat(snapshot_json, devops_fetch, no_pat):
     assert payload_list == snapshot_json
 
 
+def test_new_changes_pushed_into_draft(snapshot_json, devops_fetch, no_pat):
+    event = read_payload("new_changes_pushed")
+    event.resource.is_draft = True
+    messages = compose_messages_from_event(event)
+    assert messages == []
+
+
 def test_ms_event_comment_added(snapshot_json):
     # TODO: Fix None in the URL
     payload_list = get_slack_payload_list("ms_comment_added")

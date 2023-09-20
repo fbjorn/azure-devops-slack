@@ -61,6 +61,7 @@ class Resource(BaseModel):
     reviewers: list[Person] | None
     pr_id: int | None = Field(None, alias="pullRequestId")
     last_commit: MergeCommit | None = Field(None, alias="lastMergeSourceCommit")
+    is_draft: bool | None = Field(None, alias="isDraft")
 
 
 class Message(BaseModel):
